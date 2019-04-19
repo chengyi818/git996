@@ -13,7 +13,7 @@ REPO_STATUS_UPDATED = "updated"
 TEMPLATE_TOML = """title = "git996 template config file"
 
 [global]
-return_if_dirty = True
+return_if_dirty = true
 
 [repo]
     [repo.linux_kernel]

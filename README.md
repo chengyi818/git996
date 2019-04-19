@@ -7,6 +7,8 @@ one command to sync multiple git repositories.
 
 I always have serveral git repositories to sync between home and company everyday.It's too tiring to sync repo one by one.This tool is used to sync all the repos one command.
 
+Actually, git996 just enter every repo and execute `git pull` for you
+
 # Install
 ```
 git clone https://github.com/chengyi818/git996
