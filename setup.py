@@ -22,6 +22,11 @@ setup(
     name="git996",
     version=find_version("./ChangeLog"),
     description="One command to sync multiple git repositories",
+    author="chengyi",
+    author_email="chengyi818@foxmail.com",
+    url="https://github.com/chengyi818/git996",
+    long_description=open('README.md', 'r').read(),
+    long_description_content_type="text/markdown",
     packages=find_packages(),
     install_requires=['toml',
                       'arghandler',
@@ -33,4 +38,10 @@ setup(
     [console_scripts]
     git996= git996.main:main
     """,
+    classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3.5",
+        "Programming Language :: Python :: 3.6",
+    ],
 )
