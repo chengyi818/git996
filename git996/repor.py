@@ -20,7 +20,7 @@ class Repo(object):
             return
 
         if self.repo.untracked_files:
-            print(self.local_path, " untrack: ", self.repo.untracked_files)
+            print("Untracked: ", self.local_path)
             self.status = REPO_STATUS_UNTRACKED
             return
 
