@@ -26,6 +26,7 @@ setup(
     author_email="chengyi818@foxmail.com",
     url="https://github.com/chengyi818/git996",
     long_description=open('README.md', 'r').read(),
+    long_description_content_type="text/markdown",
     packages=find_packages(),
     install_requires=['toml',
                       'arghandler',
