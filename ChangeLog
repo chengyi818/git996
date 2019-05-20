@@ -1,6 +1,11 @@
+[0.0.4]
+	* update setup.py to support markdown
+
 [0.0.3]
 	* check untracked files when sync
+
 [0.0.2]
 	* add uninstall doc
+
 [0.0.1]
 	* init git996
