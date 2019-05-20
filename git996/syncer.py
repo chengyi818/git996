@@ -4,7 +4,7 @@
 # created time: Fri 19 Apr 2019 02:31:03 PM CST
 import threading
 from .configer import Configer
-from .const import REPO_STATUS_DIRTY
+from .const import REPO_STATUS_CLEAN
 import texttable
 
 
@@ -20,7 +20,7 @@ class Syncer(object):
             self.update_status_repos()
 
         for repo in self.configer.repos:
-            if repo.status == REPO_STATUS_DIRTY:
+            if repo.status != REPO_STATUS_CLEAN:
                 return
 
         self.sync_repos()
@@ -42,8 +42,7 @@ class Syncer(object):
     def sync_repos(self):
         subthread_list = []
         for repo in self.configer.repos:
-            tmpthread = threading.Thread(target=repo.sync,
-                                         name="sync repo")
+            tmpthread = threading.Thread(target=repo.sync, name="sync repo")
             subthread_list.append(tmpthread)
 
         for tmpthread in subthread_list:
@@ -68,8 +67,8 @@ class Syncer(object):
             local_path_columns.append(repo.local_path)
             status_columns.append(repo.status)
 
-        for row in zip(index_columns, name_columns,
-                       local_path_columns, status_columns):
+        for row in zip(index_columns, name_columns, local_path_columns,
+                       status_columns):
             tab.add_row(row)
 
         print(tab.draw())

@@ -64,6 +64,9 @@ $git996 sync
 ```
 
 # TODO
+1. Think about local branch ahead/behind origin
+[stackoverflow](https://stackoverflow.com/questions/17224134/check-status-of-local-python-relative-to-remote-with-gitpython)
+
 
 # LiCENSE
 Anti-996 License, See the LICENSE file.

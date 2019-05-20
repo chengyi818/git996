@@ -1,3 +1,5 @@
+[0.0.3]
+	* check untracked files when sync
 [0.0.2]
 	* add uninstall doc
 [0.0.1]

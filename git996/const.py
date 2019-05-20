@@ -3,12 +3,13 @@
 # Mail: chengyi818@foxmail.cn
 # created time: Fri 19 Apr 2019 05:23:50 PM CST
 
-
 CONFIG_FILE_NAME = ".git996.toml"
 
 REPO_STATUS_BARE = "bare repo"
 REPO_STATUS_DIRTY = "dirty"
 REPO_STATUS_UPDATED = "updated"
+REPO_STATUS_UNTRACKED = "untracked"
+REPO_STATUS_CLEAN = "clean"
 
 TEMPLATE_TOML = """title = "git996 template config file"
 
